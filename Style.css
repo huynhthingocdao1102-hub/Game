@@ -16,6 +16,19 @@ body {
     text-align: center;
     width: 460px;
 }
+.instructions {
+    text-align: left;
+    background-color: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.instructions h3 {
+    margin-top: 0;
+    color: #ffdd57;
+}
 
 #displayText {
     font-size: 70px;

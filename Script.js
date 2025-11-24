@@ -146,3 +146,18 @@ stopBtn.onclick = () => {
     result.style.color = "yellow";
     result.textContent = "⏸ Game tạm dừng";
 };
+const instructionsDiv = document.getElementById("gameInstructions");
+
+startBtn.onclick = () => {
+    stopBtn.style.display = "inline";
+    instructionsDiv.style.display = "none";
+
+    if (!gameStarted) {
+        gameStarted = true;
+        paused = false;
+        newRound();
+    } else if (paused) {
+        paused = false;
+        result.textContent = "▶ Game tiếp tục!";
+    }
+};
