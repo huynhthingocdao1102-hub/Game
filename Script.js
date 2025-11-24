@@ -147,7 +147,6 @@ stopBtn.onclick = () => {
     result.textContent = "⏸ Game tạm dừng";
 };
 const instructionsDiv = document.getElementById("gameInstructions");
-
 startBtn.onclick = () => {
     stopBtn.style.display = "inline";
     instructionsDiv.style.display = "none";
